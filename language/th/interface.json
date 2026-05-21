@@ -6,12 +6,12 @@
 		},
 		"topbar": {
 			"hint": {
-				"resign": "Resign yourself.",
-				"teamResign": "Call for team resign."
+				"resign": "ยอมแพ้",
+				"teamResign": "บอกให้ทีมยอมแพ้"
 			},
 			"button": {
 				"quit": "Quit",
-				"resign": "Resign",
+				"resign": "ยอมแพ้",
 				"lobby": "Lobby",
 				"settings": "Settings",
 				"changes": "Changes",
@@ -414,7 +414,7 @@
 				"wait": "wait (pause current command)",
 				"cloak": "cloak",
 				"dGun": "manual fire (dgun)",
-				"selfDestruct": "self-destruct"
+				"selfDestruct": "ทำลายตัวเอง"
 			},
 			"issueOrders": {
 				"title": "Giving selected orders",
