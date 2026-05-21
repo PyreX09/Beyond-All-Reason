@@ -74,12 +74,14 @@ i18n.languages = {
 	ru = "Русский",
 	zh = "中文",
 	es = "Español",
+	th = "ไทย",
 	test_unicode = "test_unicode"
 }
 
 -- Some initialization routines requires english translations prior to the first
 -- i18n.setLanguage call.
 ensureLanguageLoaded('en')
+i18n.setLanguage("th")
 
 function i18n.setLanguage(language)
 	ensureLanguageLoaded(language)
@@ -91,7 +93,15 @@ function i18n.setLanguage(language)
 	-- Font substitution is handled at the OS level, meaning we cannot control which fallback font is used
 	-- Manually switching fonts is requred until Spring handles font substitution at the engine level
 	-- LuaUI reload must be invoked for widgets to refresh all their font objects
-	local asianLanguage = language == 'zh'
+
+	local asianLanguages = {
+	zh = true,
+	th = true,
+	ja = true,
+	ko = true
+	}
+
+	local asianLanguage = asianLanguages[language]
 	local currentFont = Spring.GetConfigString('bar_font')
 
 	if asianLanguage and currentFont ~= asianFont then
