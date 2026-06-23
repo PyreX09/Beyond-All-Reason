@@ -266,6 +266,15 @@ local options = {
         max    	= 120,
         step   	= 1,
     },
+    {
+		key		= "norushmiddlefree",
+		name	= "No Rush Non Base FFA",
+		desc	= "Allows units to leave startboxes but disallows commands issued in enemy startboxes.\n"..
+            "Does not prevent commands onto the other side of startboxes so recommend East/West or North/South startboxes.",
+		type	= "bool",
+		section	= "options_main",
+		def		= false,
+	},
 
 	{
 		key		= "sub_header",
@@ -1548,8 +1557,8 @@ local options = {
 
     {
         key 	= "proposed_unit_reworks",
-        name 	= "Season 3 balance test",
-        desc 	= "Test balance patch for the upcoming season. Nerfs funneling resources into just a single T2 base, by changing eco stats as well as nerfing units like Tzar and Fatboy. Also a variety of other changes, like an Incisor nerf and a Banshee buff. Full changelist below",
+        name 	= "Placeholder for BLT testing",
+        desc 	= "Placeholder for official balance testing mod option",
         type 	= "bool",
         hidden 	= true,
         section = "options_experimental",
@@ -1805,16 +1814,6 @@ local options = {
         column  = 1.65,
         linkheight = 325,
         linkwidth = 350,
-    },
-
-    {
-        key 	= "lategame_rebalance",
-        name 	= "Lategame Rebalance",
-        desc 	= "T2 defenses and anti-air is weaker, giving more time for late T2 strategies to be effective.  Early T3 unit prices increased. Increased price of calamity/ragnarock by 20% so late T3 has more time to be effective.",
-        type 	= "bool",
-        section = "options_experimental",
-        def 	= false,
-        hidden 	= true,
     },
 
     {
